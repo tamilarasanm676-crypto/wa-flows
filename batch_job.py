@@ -17,3 +17,7 @@ def etl_flow(job_name: str = "Default Job"):
     raw = extract()
     processed = transform(raw)
     load(f"{job_name}: {processed}")
+@flow
+def post_etl_flow():
+    return "Post ETL tasks executed"  
+
