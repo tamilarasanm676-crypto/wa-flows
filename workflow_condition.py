@@ -9,7 +9,7 @@ def optional_run():
     return "Runs only if enabled"
 
 @flow
-def conditional_workflow(run_optional: bool = False):
+def conditional_workflow(run_optional: bool = True):
     always_run()
     if run_optional:
         optional_run()
